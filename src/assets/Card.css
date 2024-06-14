@@ -1,0 +1,27 @@
+.card{
+    background: #ccc;
+    padding: 20px;
+    cursor: pointer;
+    transition:all .3s;
+}
+.card:hover{
+    background: #82E0AA  ;
+    padding: 5px;
+}
+.card img{
+    width: 100%;
+    box-shadow: 3px 4px 5px 0px #212529;
+}
+
+.card p{
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.card a{
+    list-style: none;
+    text-decoration: none;
+    color:#333
+}

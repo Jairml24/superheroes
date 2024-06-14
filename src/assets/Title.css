@@ -1,0 +1,15 @@
+.title{
+    background: #dc3545;
+    padding: 10px 50PX;
+    color:white;
+    position:fixed;
+    z-index: 1;
+    width: 100%;
+    left:0;
+    top:0
+}
+
+.link{
+    color:white;
+    text-decoration: none;
+}
