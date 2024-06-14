@@ -16,6 +16,7 @@ function Heroes() {
       const data = await fetch(`https://gateway.marvel.com/v1/public/characters?ts=${ts}&apikey=${publicKey}&hash=${hash}`)
       const datos = await data.json()
       setHeroes(datos.data.results)
+      console.log(datos.data.results[0])
       console.log(datos.data.results[0].comics.collectionURI)
     }
     check()

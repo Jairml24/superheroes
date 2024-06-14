@@ -22,7 +22,8 @@ function HeroesDetalle() {
         return;
       }
       try {
-        const response = await fetch(`${comics}?ts=${ts}&apikey=${publicKey}&hash=${hash}`);
+        const ruta=comics.replace('http://', 'https://');
+        const response = await fetch(`${ruta}?ts=${ts}&apikey=${publicKey}&hash=${hash}`);
         const data = await response.json();
         setHeroesDetalle(data.data.results);
         setIsLoading(false); // Terminar la carga cuando se reciben los datos
